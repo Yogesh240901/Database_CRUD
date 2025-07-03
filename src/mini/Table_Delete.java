@@ -18,7 +18,7 @@ public class Table_Delete {
 			String st = s.nextLine();
 			System.out.println("Enter deletion address : ");
 			String str = s.nextLine();
-		int count = stmt.executeUpdate("delete from " + st + " where address = '" + str + "'");    //'' denotes string value
+		int count = stmt.executeUpdate("delete from " + st + " where address = '" + str + "'");    
 		if (count == 1) {
 			System.out.println(count +  " row deleted");
 		}
